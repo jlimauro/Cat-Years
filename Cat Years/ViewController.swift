@@ -24,14 +24,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func GetAge(sender: AnyObject) {
+    @IBAction func GetAge(_ sender: AnyObject) {
         HumanYears.resignFirstResponder()
-        println("Button Clicked")
+        print("Button Clicked")
         
-      var enteredAge = HumanYears.text.toInt()
+      let enteredAge = HumanYears.text
         
         if enteredAge != nil {
-            var catYears = enteredAge! * 7
+            let catYears = Int(enteredAge!)! * 7
             DisplayAnsLbl.text = "Your cat is \(catYears)"
         }
         else

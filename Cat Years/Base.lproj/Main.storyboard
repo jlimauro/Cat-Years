@@ -1,7 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -13,49 +18,80 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cat Years" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SPe-1a-Sy3">
-                                <rect key="frame" x="109" y="20" width="101" height="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cat Years" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SPe-1a-Sy3">
+                                <rect key="frame" x="149" y="25" width="77.5" height="22"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter your cat's age in years" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AjF-m2-Tgp">
-                                <rect key="frame" x="47" y="63" width="224" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your cat's age in years" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AjF-m2-Tgp">
+                                <rect key="frame" x="80" y="63" width="215.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e01-j2-g31">
-                                <rect key="frame" x="111" y="92" width="97" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e01-j2-g31">
+                                <rect key="frame" x="139" y="92" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="5iN-Mv-BMw"/>
+                                    <constraint firstAttribute="width" constant="97" id="kc0-d8-oye"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <connections>
                                     <action selector="LeaveTextBox:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="lPW-Xq-xuj"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gOc-Oo-YXd">
-                                <rect key="frame" x="129" y="136" width="61" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gOc-Oo-YXd">
+                                <rect key="frame" x="148.5" y="136" width="78" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="78" id="41u-zS-9XM"/>
+                                    <constraint firstAttribute="height" constant="35" id="8jp-RU-yq4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Find Age">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="GetAge:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="1En-8y-NKR"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Lilo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="6Fz-ek-coJ">
-                                <rect key="frame" x="47" y="223" width="245" height="247"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lilo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="6Fz-ek-coJ">
+                                <rect key="frame" x="65" y="218" width="245" height="247"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="247" id="bLp-W9-Fjt"/>
+                                    <constraint firstAttribute="width" constant="245" id="pDV-Ap-heN"/>
+                                </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fVJ-Zp-VQA">
-                                <rect key="frame" x="47" y="179" width="224" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fVJ-Zp-VQA">
+                                <rect key="frame" x="75.5" y="179" width="224" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="L9P-Hi-ZcC"/>
+                                    <constraint firstAttribute="width" constant="224" id="tqb-3S-YSh"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gOc-Oo-YXd" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="C02-ta-FM5"/>
+                            <constraint firstItem="fVJ-Zp-VQA" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="DOJ-O7-xwo"/>
+                            <constraint firstItem="SPe-1a-Sy3" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="5" id="Kje-qx-uIP"/>
+                            <constraint firstItem="e01-j2-g31" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="LZX-j3-isw"/>
+                            <constraint firstItem="SPe-1a-Sy3" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="OZ0-bd-f5j"/>
+                            <constraint firstItem="fVJ-Zp-VQA" firstAttribute="top" secondItem="gOc-Oo-YXd" secondAttribute="bottom" constant="8" id="SEz-mC-fUK"/>
+                            <constraint firstItem="6Fz-ek-coJ" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="aLK-d4-iqw"/>
+                            <constraint firstItem="e01-j2-g31" firstAttribute="top" secondItem="AjF-m2-Tgp" secondAttribute="bottom" constant="8" id="aUA-ZD-246"/>
+                            <constraint firstItem="AjF-m2-Tgp" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="hi1-Py-0Jf"/>
+                            <constraint firstItem="gOc-Oo-YXd" firstAttribute="top" secondItem="e01-j2-g31" secondAttribute="bottom" constant="14" id="i8S-kF-iuw"/>
+                            <constraint firstItem="6Fz-ek-coJ" firstAttribute="top" secondItem="gOc-Oo-YXd" secondAttribute="bottom" constant="47" id="nju-nD-eXZ"/>
+                            <constraint firstItem="AjF-m2-Tgp" firstAttribute="top" secondItem="SPe-1a-Sy3" secondAttribute="bottom" constant="16" id="oEI-Pg-Tgp"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="DisplayAnsLbl" destination="fVJ-Zp-VQA" id="80I-jL-rdN"/>
@@ -64,7 +100,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131" y="689"/>
+            <point key="canvasLocation" x="130.40000000000001" y="688.60569715142435"/>
         </scene>
     </scenes>
     <resources>
